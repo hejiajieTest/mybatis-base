@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cn.ffcs.tsp.msa.mybatis</groupId>
+  <artifactId>mybatis-base</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Maven</name>
+  <url>http://maven.apache.org/</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mybatis-version>3.2.8</mybatis-version>
+    <mysql-version>5.0.8</mysql-version>
+    <druid-version>1.0.12</druid-version>
+    <mybatis-spring-version>1.2.2</mybatis-spring-version>
+    <spring-version>4.1.4.RELEASE</spring-version>
+  </properties>
+  <!-- 用来管理jar包版本，如果后面的jar包没有申明版本，会以这里面的版本为主，此处并不会引入jar包 -->
+  <dependencyManagement>
+  	<dependencies>
+  		  <!-- mybatis start -->
+  		<dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis-version}</version>
+  		</dependency>
+  		<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-version}</version>
+        </dependency>
+        <!--alibaba 数据库连接池 start-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid-version}</version>
+        </dependency>
+  		<!-- alibaba 数据库连接池 end -->
+  		<dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring-version}</version>
+        </dependency>
+        <!--Spring start -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+  	</dependencies>
+  </dependencyManagement>
+   <distributionManagement>
+        <repository>
+            <id>my-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>my-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+   <modules>
+   	<module>mybatis-first</module>
+   	<module>mybatis-two</module>
+   	<module>mybatis-third</module>
+   	<module>mybatis-four</module>
+   	<module>mybatis-five</module>
+   	<module>mybatis-six</module>
+    <module>mybatis-seven</module>
+  </modules>
+</project>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.ffcs.tsp.msa.mybatis</groupId>
+    <artifactId>mybatis-base</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>cn.ffcs.tsp.msa.mybatis</groupId>
+  <artifactId>mybatis-seven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>mybatis-seven</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+  	</dependency>
+  	<dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <!--alibaba 数据库连接池 start-->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+     </dependency>
+     <!-- alibaba 数据库连接池 end -->
+     <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+       </dependency>
+         <!--Spring start -->
+       <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-context</artifactId>
+       </dependency>
+
+       <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-aspects</artifactId>
+       </dependency>
+
+       <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-jdbc</artifactId>
+       </dependency>
+
+       <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-beans</artifactId>
+       </dependency>
+
+       <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-web</artifactId>
+       </dependency>
+  </dependencies>
+</project>
