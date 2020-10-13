@@ -19,7 +19,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
      <!-- 如果此处指定了jar包版本，则会以此处为主，如果不指名，则会引入 -->
