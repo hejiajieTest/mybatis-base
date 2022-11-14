@@ -16,7 +16,7 @@
     <mysql-version>5.0.8</mysql-version>
     <druid-version>1.0.12</druid-version>
     <mybatis-spring-version>1.2.2</mybatis-spring-version>
-    <spring-version>4.1.4.RELEASE</spring-version>
+    <spring-version>4.2.7.RELEASE</spring-version>
   </properties>
   <!-- 用来管理jar包版本，如果后面的jar包没有申明版本，会以这里面的版本为主，此处并不会引入jar包 -->
   <dependencyManagement>
